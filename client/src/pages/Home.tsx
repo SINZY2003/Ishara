@@ -11,6 +11,7 @@ import AnimatedStats from "@/components/AnimatedStats";
 import FaqSection from "@/components/FaqSection";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import { motion } from "framer-motion";
+import sign from "@/assets/sign.jpeg";
 
 export default function Home() {
   // Feature cards data
@@ -80,7 +81,7 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <HeroSection
-        title="Shara Gesture Tour and Adventure"
+        title="Ishara Gesture Tour and Adventure"
         subtitle="Explore Africa with inclusive and accessible tours"
         description="Experience the beauty of Kenya with tour guides fluent in sign language. Breaking barriers, creating memories."
         primaryButtonText="Book Your Safari"
@@ -107,7 +108,7 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6 text-[#333333]">Welcome to Shara Gesture Tour and Adventure</h2>
+            <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6 text-[#333333]">Welcome to Ishara Gesture Tour and Adventure</h2>
             <div className="w-20 h-1 bg-primary-color mx-auto mb-6"></div>
             <p className="text-lg mb-8">We're redefining African safaris by making them accessible to everyone, including the Deaf and Hard-of-Hearing communities. Our mission is to ensure that everyone can experience the wonder of Kenya's wildlife and culture.</p>
           </motion.div>
@@ -230,7 +231,7 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6 text-white">Why Choose Shara Gesture?</h2>
+            <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6 text-white">Why Choose Ishara Gesture?</h2>
             <div className="w-20 h-1 bg-primary-color mx-auto mb-6"></div>
           </motion.div>
           
@@ -298,7 +299,7 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6 text-[#333333]">What Our Guests Say</h2>
+            <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6 text-primary-color">What Our Guests Say</h2>
             <div className="w-20 h-1 bg-primary-color mx-auto mb-6"></div>
           </motion.div>
           

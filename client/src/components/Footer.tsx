@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import sign from "@/assets/sign.jpeg";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -46,14 +47,10 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-4">
               <img
-                src="/images/sign.jpeg"
+                src={sign}
                 alt="Shara Gesture Logo"
-                className="h-16 w-auto mr-3 rounded"
+                className="h-17 w-30 mr-3 rounded"
               />
-              <div>
-                <h3 className="font-heading font-bold text-xl">Shara Gesture</h3>
-                <p className="text-gray-400">Tour and Adventure</p>
-              </div>
             </div>
             <p className="text-gray-400">Making African safaris accessible to everyone through inclusive experiences and sign language support.</p>
           </div>
@@ -147,7 +144,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-6 mt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 mb-4 md:mb-0">&copy; {new Date().getFullYear()} Shara Gesture Tour and Adventure. All rights reserved.</p>
+            <p className="text-gray-400 mb-4 md:mb-0">&copy; {new Date().getFullYear()} Ishara Gesture Tour and Adventure. All rights reserved.</p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-primary-color transition duration-300 text-sm">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-primary-color transition duration-300 text-sm">Terms of Service</a>

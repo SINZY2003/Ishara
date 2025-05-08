@@ -33,7 +33,7 @@ export default function About() {
     <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h1 className="font-heading font-bold text-3xl md:text-4xl mb-6 text-[#333333]">About Shara Gesture</h1>
+          <h1 className="font-heading font-bold text-3xl md:text-4xl mb-6 text-[#333333]">About Ishara Gesture</h1>
           <div className="w-20 h-1 bg-primary-color mx-auto mb-6"></div>
           <p className="text-lg">Discover the story behind East Africa's premier inclusive tour company.</p>
         </div>
@@ -50,7 +50,7 @@ export default function About() {
           
           <div>
             <h2 className="font-heading font-bold text-2xl mb-4 text-[#333333]">Our Story</h2>
-            <p className="mb-4">Founded in 2018, Shara Gesture Tour and Adventure was born from a simple observation: the tourism industry was leaving behind travelers with hearing impairments. Our founder, a CODA (Child of Deaf Adults) and experienced safari guide, decided to bridge this gap.</p>
+            <p className="mb-4">Founded in 2018, Ishara Gesture Tour and Adventure was born from a simple observation: the tourism industry was leaving behind travelers with hearing impairments. Our founder, a CODA (Child of Deaf Adults) and experienced safari guide, decided to bridge this gap.</p>
             <p className="mb-4">Today, we've grown into a team of passionate guides, interpreters, and tourism professionals committed to making Kenya's natural wonders and cultural experiences accessible to everyone.</p>
             <p>We believe that the magic of encountering wildlife in their natural habitat and connecting with local communities should be available to all travelers, regardless of hearing ability.</p>
           </div>

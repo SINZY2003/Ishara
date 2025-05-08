@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import sign from "@/assets/sign.jpeg";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -39,12 +40,12 @@ export default function Navbar() {
             <Link href="/">
               <a className="flex items-center">
                 <img
-                  src="/images/sign.jpeg"
+                  src={sign}
                   alt="Shara Gesture Logo"
                   className="h-14 w-auto mr-3 rounded"
                 />
                 <div className="hidden md:block">
-                  <span className="font-heading font-bold text-xl text-primary-color">Shara Gesture</span>
+                  <span className="font-heading font-bold text-xl text-primary-color">Ishara Gesture</span>
                   <span className="block text-xs text-secondary-color">Tour and Adventure</span>
                 </div>
               </a>
@@ -53,22 +54,22 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/">
-              <a className={`${isScrolled ? 'text-[#333333]' : 'text-primary-color font-bold'} hover:text-primary-color transition duration-300 ${location === "/" ? "text-primary-color" : ""}`}>
+              <a className={`${isScrolled ? 'text-[#333333]' : 'text-primary-color font-bold'} hover:text-[hsl(var(--accent))] transition duration-300 ${location === "/" ? "text-primary-color" : ""}`}>
                 Home
               </a>
             </Link>
             <Link href="/about">
-              <a className={`${isScrolled ? 'text-[#333333]' : 'text-primary-color font-bold'} hover:text-primary-color transition duration-300 ${location === "/about" ? "text-primary-color" : ""}`}>
-                About Us
+              <a className={`${isScrolled ? 'text-[#333333]' : 'text-primary-color font-bold'} hover:text-[hsl(var(--accent))] transition duration-300 ${location === "/about" ? "text-primary-color" : ""}`}>
+                About Uss
               </a>
             </Link>
             <Link href="/safaris">
-              <a className={`${isScrolled ? 'text-[#333333]' : 'text-primary-color font-bold'} hover:text-primary-color transition duration-300 ${location === "/safaris" ? "text-primary-color" : ""}`}>
+              <a className={`${isScrolled ? 'text-[#333333]' : 'text-primary-color font-bold'} hover:text-[hsl(var(--accent))] transition duration-300 ${location === "/safaris" ? "text-primary-color" : ""}`}>
                 Safaris & Adventures
               </a>
             </Link>
             <Link href="/contact">
-              <a className={`${isScrolled ? 'text-[#333333]' : 'text-primary-color font-bold'} hover:text-primary-color transition duration-300 ${location === "/contact" ? "text-primary-color" : ""}`}>
+              <a className={`${isScrolled ? 'text-[#333333]' : 'text-primary-color font-bold'} hover:text-[hsl(var(--accent))] transition duration-300 ${location === "/contact" ? "text-primary-color" : ""}`}>
                 Contact
               </a>
             </Link>
@@ -96,10 +97,10 @@ export default function Navbar() {
             mobileMenuOpen ? "block" : "hidden"
           }`}
         >
-          <div className="flex flex-col space-y-4 p-4">
+          <div className="container mx-auto flex flex-col space-y-4 p-4">
             <Link href="/">
               <a
-                className="text-[#333333] hover:text-primary-color font-medium py-2 transition duration-300"
+                className="text-[#333333] hover:text-[hsl(var(--accent))] font-medium py-4 transition duration-300"
                 onClick={closeMobileMenu}
               >
                 Home
@@ -107,7 +108,7 @@ export default function Navbar() {
             </Link>
             <Link href="/about">
               <a
-                className="text-[#333333] hover:text-primary-color font-medium py-2 transition duration-300"
+                className="text-[#333333] hover:text-[hsl(var(--accent))] font-medium py-4 transition duration-300"
                 onClick={closeMobileMenu}
               >
                 About Us
@@ -115,7 +116,7 @@ export default function Navbar() {
             </Link>
             <Link href="/safaris">
               <a
-                className="text-[#333333] hover:text-primary-color font-medium py-2 transition duration-300"
+                className="text-[#333333] hover:text-[hsl(var(--accent))] font-medium py-4 transition duration-300"
                 onClick={closeMobileMenu}
               >
                 Safaris & Adventures
@@ -123,7 +124,7 @@ export default function Navbar() {
             </Link>
             <Link href="/contact">
               <a
-                className="text-[#333333] hover:text-primary-color font-medium py-2 transition duration-300"
+                className="text-[#333333] hover:text-[hsl(var(--accent))] font-medium py-4 transition duration-300"
                 onClick={closeMobileMenu}
               >
                 Contact

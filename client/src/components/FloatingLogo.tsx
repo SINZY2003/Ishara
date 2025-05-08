@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-const image = "/images/sign.jpeg";
+const image = "/assets/sign.jpeg";
 
 export default function FloatingLogo() {
   const [isVisible, setIsVisible] = useState(false);

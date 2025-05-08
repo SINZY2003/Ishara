@@ -98,7 +98,7 @@ export default function Contact() {
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Shara Gesture Tour and Adventure location"
-                  aria-label="Map showing location of Shara Gesture Tour and Adventure in Karen, Nairobi, Kenya"
+                  aria-label="Map showing location of Ishara Gesture Tour and Adventure in Karen, Nairobi, Kenya"
                 ></iframe>
               </div>
             </div>

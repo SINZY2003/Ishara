@@ -15,11 +15,11 @@
   --card-foreground: 20 14.3% 4.1%;
   --border: 20 5.9% 90%;
   --input: 20 5.9% 90%;
-  --primary: 24 80% 51%;
-  --primary-foreground: 211 100% 99%;
-  --secondary: 148 47% 33%;
+  --primary: 33 52% 38%;
+  --primary-foreground: 20 14.3% 4.1%;
+  --secondary: 131 26% 19%;
   --secondary-foreground: 24 9.8% 10%;
-  --accent: 43 100% 50%;
+  --accent: 33 49% 44%;
   --accent-foreground: 24 9.8% 10%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 60 9.1% 97.8%;
@@ -38,11 +38,11 @@
   --card-foreground: 0 0% 98%;
   --border: 240 3.7% 15.9%;
   --input: 240 3.7% 15.9%;
-  --primary: 24 80% 51%;
-  --primary-foreground: 211 100% 99%;
-  --secondary: 148 47% 33%;
+  --primary: 33 52% 28%;
+  --primary-foreground: 20 14.3% 4.1%;
+  --secondary: 131 26% 9%;
   --secondary-foreground: 0 0% 98%;
-  --accent: 43 100% 50%;
+  --accent: 33 49% 34%;
   --accent-foreground: 0 0% 98%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
@@ -65,6 +65,7 @@
 
   .font-heading {
     font-family: 'Montserrat', sans-serif;
+    @apply text-[hsl(var(--accent))];
   }
 
   .font-body {
@@ -78,9 +79,9 @@
   .section-heading::after {
     content: '';
     display: block;
-    width: 80px;
+    width: 20%;
     height: 3px;
-    background-color: hsl(var(--primary));
+    background-color: hsl(var(--accent));
     margin: 16px 0;
   }
 
@@ -89,27 +90,23 @@
   }
 
   .text-primary-color {
-    @apply text-[#E56B1F];
-  }
-
-  .text-secondary-color {
-    @apply text-[#2C7A51];
+    @apply text-[hsl(var(--primary))];
   }
 
   .text-accent-color {
-    @apply text-[#FFC107];
+    @apply text-[hsl(var(--accent))];
   }
 
   .bg-primary-color {
-    @apply bg-[#E56B1F];
+    @apply bg-[hsl(var(--primary))];
   }
 
   .bg-secondary-color {
-    @apply bg-[#2C7A51];
+    @apply bg-[hsl(var(--secondary))];
   }
 
   .bg-accent-color {
-    @apply bg-[#FFC107];
+    @apply bg-[hsl(var(--accent))];
   }
 
   .bg-neutral-color {

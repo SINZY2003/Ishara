@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import sign from "@/assets/sign.jpeg";
 
 interface HeroSectionProps {
   title: string;
@@ -24,14 +25,14 @@ export default function HeroSection({
 }: HeroSectionProps) {
   return (
     <div 
-      className="relative h-screen bg-cover bg-center pt-16" 
+      className="relative h-screen bg-cover bg-center pt-16 overflow-hidden" 
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div className="container mx-auto px-4 h-full flex items-center relative z-10">
+      <div className="container mx-auto px-4 h-full flex items-center relative z-10 max-w-full">
         <div className="text-white max-w-2xl">
           <img
-            src="/images/sign.jpeg"
+            src={sign}
             alt="Shara Gesture Logo"
             className="h-32 w-auto mb-6 rounded shadow-lg"
           />
@@ -53,9 +54,12 @@ export default function HeroSection({
               
               {secondaryButtonText && secondaryButtonLink && (
                 <Link href={secondaryButtonLink}>
-                  <Button variant="outline" className="border-2 border-white hover:bg-white hover:text-[#333333] text-white font-bold py-3 px-6">
-                    {secondaryButtonText}
-                  </Button>
+                    <Button 
+                      variant="ghost" 
+                      className="text-white font-bold py-3 px-6 hover:bg-orange-500 hover:text-white border border-white"
+                    >
+                      {secondaryButtonText}
+                    </Button>
                 </Link>
               )}
             </div>
