@@ -82,12 +82,12 @@ export default function GalleryCarousel() {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
       <Carousel className="w-full">
         <CarouselContent>
           {images.map((image) => (
             <CarouselItem key={image.id} className="md:basis-1/2 lg:basis-1/3">
-              <div className="p-1">
+              <div>
                 <div className="overflow-hidden rounded-lg group relative">
                   <img
                     src={image.src}
