@@ -37,18 +37,16 @@ export default function Navbar() {
       <div className="container relative z-10 mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Link href="/">
-              <a className="flex items-center">
-                <img
-                  src={sign}
-                  alt="Shara Gesture Logo"
-                  className="h-14 w-auto mr-3 rounded"
-                />
-                <div className="hidden md:block">
-                  <span className="font-heading font-bold text-xl text-primary-color">Ishara Gesture</span>
-                  <span className="block text-xs text-secondary-color">Tour and Adventure</span>
-                </div>
-              </a>
+            <Link href="/" className="flex items-center">
+              <img
+                src={sign}
+                alt="Shara Gesture Logo"
+                className="h-14 w-auto mr-3 rounded"
+              />
+              <div className="hidden md:block">
+                <span className="font-heading font-bold text-xl text-primary-color">Ishara Gesture</span>
+                <span className="block text-xs text-secondary-color">Tour and Adventure</span>
+              </div>
             </Link>
           </div>
 
@@ -60,7 +58,7 @@ export default function Navbar() {
             </Link>
             <Link href="/about">
               <a className={`${isScrolled ? 'text-[#333333]' : 'text-primary-color font-bold'} hover:text-[hsl(var(--accent))] transition duration-300 ${location === "/about" ? "text-primary-color" : ""}`}>
-                About Uss
+                About Us
               </a>
             </Link>
             <Link href="/safaris">
